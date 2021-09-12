@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>DOM – onmouseover E onmouseout</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color:plum;
+			}
+		</style>
+		<script>
+			function MudaFundo(corFundo) {
+				if(corFundo=='yellow') {
+					D1.style.backgroundColor='white'
+				} 
+				else {
+					D1.style.backgroundColor='yellow'
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p 	onmouseover="this.style.backgroundColor='yellow'"
+			onmouseout ="this.style.backgroundColor='white'">
+		 A raposa descansava  à beira da lagoa quando escutou o latido de cães.
+		</p>
+		
+		<div onclick="MudaFundo(this.style.backgroundColor)" id="D1">
+			Texto de exemplo
+		</div>
+		<hr>
+		Seu nome:
+		<input 	type="text" 
+				name="nome" 
+				id="nome" 
+				size="30" 
+				maxlength="30"
+				placeholder="Informe seu nome"
+				onfocus="this.style.backgroundColor='yellow'"
+				onblur="this.style.backgroundColor='white'">
+		
+	</body>
+	
+</html>

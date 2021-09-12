@@ -1,0 +1,61 @@
+/* salvar como DOM-p7.css */
+input[type=button] {
+	text-align:center;
+	width:200px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 24px;
+	margin-top:10px;
+}
+#btnA {
+	color:white;
+	background-color: rgb(0,112,192);
+} 
+#btnR {
+	background-color: rgb(255,102,255);
+}
+
+#areaDados {display:none;}
+
+@font-face {
+	font-family:Hokjesgeest;
+	src:url('ttf/Hokjesgeest.otf') format('truetype');
+}
+h1 {
+	color:cyan;
+	text-align:center;
+	font-family:Hokjesgeest;
+	font-size:50px;
+}
+
+
+body {
+	background:url(imgs/fundo.png);
+	background-size:cover;
+	font-family:Calibri, Arial, Helvetica, sans-serif; 
+
+	animation-name: ceu;
+	animation-duration:20s;
+	animation-fill-mode:forwards;
+}
+@keyframes ceu {
+	0% {background-color:white;}
+	20% {background-color:silver;}
+	35% {background-color:#606060;}
+	60% {background-color:#3E5FAE;}
+	100%{background-color:black;}
+}
+
+#areaDados {
+	background: rgba( 14, 14, 150, 0.35 ) ;
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) ;
+	backdrop-filter: blur( 3px ) ;
+	-webkit-backdrop-filter: blur( 3px ) ;
+	border-radius: 10px ;
+	border: 1px solid rgba( 255, 255, 255, 0.18 ) ;
+	
+	color:white ;
+	font-size:30px ;
+	margin:0px auto ;
+	padding:10px ;
+	width:850px ;
+}

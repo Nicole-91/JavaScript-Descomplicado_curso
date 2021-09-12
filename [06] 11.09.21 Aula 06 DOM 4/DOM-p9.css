@@ -1,0 +1,63 @@
+/* salvar como DOM-p9.css */
+#areaHDI { background-color: lightblue; }
+#areaHDE { background-color :plum ;}
+#areaSSD { background-color: pink ;}
+
+
+#areaHDE, #areaSSD { display: none; }
+
+body{
+	background:url(https://cdn.pixabay.com/photo/2020/12/28/09/44/man-5866475_960_720.jpg);
+	background-size:cover;
+}
+
+#areaApp{
+	width:600px;
+	border:2px solid navy;
+	border-radius:10%;
+	box-shadow: 10px 10px 8px 10px #888888;
+	background-color:rgba(221,160,221 ,0.9 );
+	padding:20px;
+}
+#areaApp h2 {text-align:center;color:navy;}
+
+.botoes{
+	display:inline-block;
+	padding:0.7em 1.7em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:600;
+	color:#FFFFFF;
+	background-color:#3369ff;
+	box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+	text-align:center;
+	position:relative;
+}
+.botoes:active{
+	box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}
+
+.botoesOFF{
+	display:inline-block;
+	padding:0.7em 1.7em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:600;
+	color:#FFFFFF;
+	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+	box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+	text-align:center;
+	position:relative;
+}
+
+
+
+.botoesOFF:active{
+	box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}

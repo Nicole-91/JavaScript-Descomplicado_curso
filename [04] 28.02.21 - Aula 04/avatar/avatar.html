@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>DOM – Imagens - Avatar</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="avatar.css">		
+		<script src="avatar.js"></script>
+	</head>
+	<body>
+		<h1>Escolha seu Avatar</h1>
+		<img src="imgs/bruxaPeq.png" 		title="A Bruxinha Boa" 	  		onmouseover ="mudaImagem(this.title , 'bruxa.png')"			onclick="Clicou('Bruxa')">
+		<img src="imgs/ceifadorPeq.png" 	title="Ceifador da hora"  		onmouseover ="mudaImagem(this.title , 'ceifador.png')"		onclick="Clicou('Ceifador')">
+		<img src="imgs/frankensteinPeq.png" title="Frankenstein do Bom Retiro" onmouseover="mudaImagem(this.title,'frankenstein.png')"	onclick="Clicou('Frankenstein')">
+		<img src="imgs/magoPeq.png" 		title="O Mago da esquina" 		onmouseover ="mudaImagem(this.title , 'mago.png')"			onclick="Clicou('Mago')">
+		<img src="imgs/mumiaPeq.png" 		title="A Mumia Pirada" 	  		onmouseover ="mudaImagem(this.title , 'mumia.png')"			onclick="Clicou('Múmia')">
+		<img src="imgs/vampiroPeq.png" 		title="BatVamp" 	  			onmouseover ="mudaImagem(this.title , 'vampiro.png')"		onclick="Clicou('Vampiro')">
+		<img src="imgs/zumbiPeq.png" 		title="O Zumbi Zumbado"   		onmouseover ="mudaImagem(this.title , 'zumbi.png')"			onclick="Clicou('Zumbi')">
+		<hr>
+		<img src="imgs/gasparzinho.png" id="imgGrande" title="Seu AVATAR" >
+		<!-- Preparando a música de fundo -->
+		<audio autoplay="off" id="_musica" loop>
+			<source src="audio/aries-beats-halloween-pipe-organ.mp3" type="audio/mpeg">
+			<source src="aries-beats-halloween-pipe-organ.wav" type="audio/wav">
+			<!-- Se não tocar é porque o navegador não suporta áudio-->
+		</audio>
+		<div id="aviso" class="center">
+			Escolha seu avatar clicando na imagem desejada!<br>
+			<input type="button" value="OK" onclick="tocarMusica()">
+			
+			<div id="direitos">
+				<strong>Música de fundo de:</strong><br>
+				Halloween Pipe Organ by Aries Beats | https://soundcloud.com/aries4rce<br>
+				Music promoted by https://www.free-stock-music.com<br>
+				Creative Commons Attribution-ShareAlike 3.0 Unported<br>
+				https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+			</div>
+
+		</div>
+	</body>
+</html>
